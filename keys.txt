@@ -1,0 +1,9 @@
+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
+
+Qdrant_url: https://c9f9e2b2-c9cf-4bc0-bfb6-8bb25ba07b37.us-east4-0.gcp.cloud.qdrant.io
+Qdrant-key: 9fHlhZj4on_ywqex_nujlopp0YpiOEayOQRxIiAdPQufvHuJmKVmvg
+
+es_api-key: essu_ZFVGellVVlpNRUoxUzI1SFJESlRjMGxWVkRBNmNrUllUalJFUjNKU1VXVmxlRWxKUjNvelgzaEtRUT09AAAAAGpq5yw=
+es_user: elastic
+es_password: zNtkow6QQXG44G50O0ICR068
+es_cloud_id : Hackathon:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGUwZWY3NjFkNzVjNDQ0ZDE4Y2I4ZGU2MTlmZGYxNjJiJDg2ZjI5MjExYTBkODQ1Y2ZiYzc4ZDgwMTczMzRlOTBj
