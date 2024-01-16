@@ -23,7 +23,7 @@ from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 
 ## keys
-openai_key = st.secrets['OPENAI_API_KEY']
+# openai_key = st.secrets['OPENAI_API_KEY']
 qdrant_key = st.secrets['QDRANT_API_KEY']
 qdrant_url = st.secrets['QDRANT_URL']
 es_user = st.secrets['ES_USER']
@@ -48,7 +48,8 @@ def main():
     ## interface.
     with st.sidebar:
         uploaded_files = st.file_uploader("Upload Your Document", type=["pdf","docx","zip"], accept_multiple_files=True)
-        openai_api_key = openai_key
+        # openai_api_key = openai_key
+        openai_api_key = st.text_input("OpenAI API Key", key=openapi_key , type="password")
         process = st.button("Process")
 
     ## processing.
