@@ -24,7 +24,7 @@ from langchain.retrievers.multi_query import MultiQueryRetriever
 
 ## keys
 # openai_key = st.secrets['OPENAI_API_KEY']
-qdrant_key = st.secrets['QDRANT_API_KEY']
+qdrant_key = st.secrets["QDRANT_API_KEY"]
 qdrant_url = st.secrets['QDRANT_URL']
 es_user = st.secrets['ES_USER']
 es_pass = st.secrets['ES_PASSWORD']
