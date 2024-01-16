@@ -24,12 +24,6 @@ from langchain.retrievers.multi_query import MultiQueryRetriever
 
 ## keys
 # openai_key = st.secrets['OPENAI_API_KEY']
-qdrant_key = st.secrets.qdrant.QDRANT_API_KEY
-qdrant_url = st.secrets.qdrant.QDRANT_URL
-es_user = st.secrets.elasticsearch.ES_USER
-es_pass = st.secrets.elasticsearch.ES_PASSWORD
-es_cloud_id = st.secrets.elasticsearch.ES_CLOUD_ID
-
 # qdrant_key = st.secrets["qdrant"]["QDRANT_API_KEY"]
 # qdrant_url = st.secrets["qdrant"]['QDRANT_URL']
 # es_user = st.secrets["elasticsearch"]['ES_USER']
@@ -56,6 +50,11 @@ def main():
         uploaded_files = st.file_uploader("Upload Your Document", type=["pdf","docx","zip"], accept_multiple_files=True)
         # openai_api_key = openai_key
         openai_api_key = st.text_input("OpenAI API Key", key=openapi_key , type="password")
+        qdrant_key = st.text_input("qdrant_key", key=openapi_key , type="password")
+        qdrant_url = st.text_input("qdrant_url", key=openapi_key , type="password")
+        es_user = st.text_input("es_user", key=openapi_key , type="password")
+        es_pass = st.text_input("es_pass", key=openapi_key , type="password")
+        es_cloud_id = st.text_input("es_cloud_id", key=openapi_key , type="password")
         process = st.button("Process")
 
     ## processing.
