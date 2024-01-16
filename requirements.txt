@@ -1,1 +1,8 @@
 streamlit
+pypdf
+langchain
+pymupdf
+docx2txt
+python-docx
+"unstructured[files]"
+elasticsearch
