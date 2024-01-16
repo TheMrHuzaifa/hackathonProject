@@ -6,7 +6,6 @@ docx2txt
 python-docx
 elasticsearch
 python-dotenv
-tempfile
 streamlit_chat
 openai
 faiss-gpu
