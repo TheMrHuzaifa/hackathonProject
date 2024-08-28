@@ -10,3 +10,4 @@ python-dotenv
 streamlit_chat
 openai
 faiss-gpu
+sentence-transformers
