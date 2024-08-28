@@ -6,6 +6,7 @@ pymupdf
 docx2txt
 python-docx
 elasticsearch
+qdrant-client
 python-dotenv
 streamlit_chat
 openai
