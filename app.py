@@ -23,9 +23,9 @@ from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 
 ## keys
-# openai_key = st.secrets['OPENAI_API_KEY']
-# qdrant_key = st.secrets["qdrant"]["QDRANT_API_KEY"]
-# qdrant_url = st.secrets["qdrant"]['QDRANT_URL']
+openai_key = st.secrets["openai_key"]
+qdrant_key = st.secrets["qdrant"]["qdrant_api_key"]
+qdrant_url = st.secrets["qdrant"]["qdrant_url"]
 # es_user = st.secrets["elasticsearch"]['ES_USER']
 # es_pass = st.secrets["elasticsearch"]['ES_PASSWORD']
 # es_cloud_id = st.secrets["elasticsearch"]['ES_CLOUD_ID']
@@ -48,13 +48,13 @@ def main():
     ## interface.
     with st.sidebar:
         uploaded_files = st.file_uploader("Upload Your Document", type=["pdf","docx","zip"], accept_multiple_files=True)
-        # openai_api_key = openai_key
-        openai_api_key = st.text_input("OpenAI API Key" , type="password")
-        qdrant_key = st.text_input("qdrant_key ", type="password")
-        qdrant_url = st.text_input("qdrant_url" , type="password")
-        es_user = st.text_input("es_user", type="password")
-        es_pass = st.text_input("es_pass" , type="password")
-        es_cloud_id = st.text_input("es_cloud_id", type="password")
+        openai_api_key = openai_key
+        # openai_api_key = st.text_input("OpenAI API Key" , type="password")
+        # qdrant_key = st.text_input("qdrant_key ", type="password")
+        # qdrant_url = st.text_input("qdrant_url" , type="password")
+        # es_user = st.text_input("es_user", type="password")
+        # es_pass = st.text_input("es_pass" , type="password")
+        # es_cloud_id = st.text_input("es_cloud_id", type="password")
         process = st.button("Process")
 
     ## processing.
