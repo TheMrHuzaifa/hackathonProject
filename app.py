@@ -99,8 +99,8 @@ def main():
         collection_name = "".join(random.choices(string.ascii_lowercase, k=4)) + crr_data.split(".")[0].replace(":","-").replace(" ","t")
 
         ## here we use qdrant or elastic search for vertor database.
-        vectorstore = get_vectorstore_es(text_chunks_list, collection_name)
-        # vectorstore = get_vectorstore_qdrant(text_chunks_list, collection_name)
+        # vectorstore = get_vectorstore_es(text_chunks_list, collection_name)
+        vectorstore = get_vectorstore_qdrant(text_chunks_list, collection_name)
 
         ## Retrieval Strategies.
         num_chunks = 4
