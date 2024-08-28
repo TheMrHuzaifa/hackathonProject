@@ -253,7 +253,7 @@ def get_qa_chain(vectorstore , num_chunks):
 
     ## chain.
     qa = RetrievalQA.from_chain_type(
-        llm=ChatOpenAI(model = "gpt-3.5-turbo-16k", openai_api_key = openai_api_key),
+        llm=ChatOpenAI(model = "gpt-3.5-turbo-16k", openai_api_key = open_ai_key),
         chain_type="stuff",
         retriever=vectorstore.as_retriever(
             search_type="similarity",
