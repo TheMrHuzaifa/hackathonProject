@@ -48,7 +48,7 @@ def main():
     ## interface.
     with st.sidebar:
         uploaded_files = st.file_uploader("Upload Your Document", type=["pdf","docx","zip"], accept_multiple_files=True)
-        # openai_api_key = openai_key
+        openai_api_key = openai_key
         # openai_api_key = st.text_input("OpenAI API Key" , type="password")
         # qdrant_key = st.text_input("qdrant_key ", type="password")
         # qdrant_url = st.text_input("qdrant_url" , type="password")
